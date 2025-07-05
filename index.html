@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Neon Arkanoid</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="orientation-warning">
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48cGF0aCBkPSJNMjEgMTJIM00yMSA2SDNNMjEgMThIM00xNyAzdjE4Ii8+PC9zdmc+" alt="Rotate device">
+        <p>Please rotate your device to landscape mode</p>
+        <p>For the best gaming experience!</p>
+    </div>
+    
+    <div id="game-container">
+        <canvas id="gameCanvas"></canvas>
+        <div id="ui-overlay">
+            <div id="start-screen" class="screen">
+                <h1>NEON ARKANOID</h1>
+                <button id="start-button">TOUCH</button>
+                <button id="high-scores-button">HIGH SCORES</button>
+                <p class="credits">Created by Saqib Kamal</p>
+            </div>
+            <div id="pause-screen" class="screen hidden">
+                <h2>PAUSED</h2>
+                <button id="resume-button">RESUME</button>
+                <button id="restart-button">RESTART</button>
+                <button id="quit-button">QUIT</button>
+            </div>
+            <div id="game-over-screen" class="screen hidden">
+                <h2>GAME OVER</h2>
+                <div id="final-score"></div>
+                <button id="try-again-button">TRY AGAIN</button>
+                <button id="main-menu-button">MAIN MENU</button>
+            </div>
+            <div id="hud">
+                <div id="score">SCORE: 0</div>
+                <div id="lives">LIVES: 3</div>
+                <div id="level">LEVEL: 1</div>
+            </div>
+        </div>
+    </div>
+    <script src="js/constants.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/particle.js"></script>
+    <script src="js/powerup.js"></script>
+    <script src="js/paddle.js"></script>
+    <script src="js/ball.js"></script>
+    <script src="js/brick.js"></script>
+    <script src="js/levels.js"></script>
+    <script src="js/sound.js"></script>
+    <script src="js/game.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
